@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/index.js"],"names":["toggle","onclick","nav","classList"],"mappings":";AAAAA,OAAOC,QAAU,WACfC,IAAIC,UAAUH,OAAO","file":"js.e80f1d77.js","sourceRoot":"..\\src","sourcesContent":["toggle.onclick = () => {\r\n  nav.classList.toggle(\"expand\");\r\n};\r\n"]}
