@@ -1,0 +1,224 @@
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 135px;
+  background-color: #ffffff;
+  z-index: 5;
+  &_top {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(133, 133, 131);
+    &-content {
+      font-size: 1rem;
+      font-weight: bold;
+      color: rgb(133, 133, 131);
+      margin: 15px auto;
+    }
+  }
+}
+
+.nav {
+  width: 95%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  &_toggle {
+    display: none;
+  }
+  &_logo {
+    display: flex;
+    align-items: center;
+  }
+  &_img {
+    height: 50px;
+    &-link {
+      text-decoration: none;
+      align-items: center;
+      margin-left: 20px;
+      color: rgb(133, 133, 131);
+      font-size: 20px;
+    }
+  }
+  &_content {
+    display: flex;
+    align-items: center;
+  }
+  &_list {
+    display: flex;
+    height: 100%;
+  }
+  &_item {
+    margin: 0 30px;
+    display: flex;
+  }
+  &_link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(133, 133, 131);
+    font-size: 16px;
+  }
+  &_logIn {
+    width: 125px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_button {
+    width: 100%;
+    height: 37px;
+    background-color: #ffffff;
+    padding: 6px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: rgb(133, 133, 131);
+    margin-right: 5px;
+    text-decoration: none;
+    &_img {
+      width: 26px;
+      height: 26px;
+      margin-right: 7px;
+      margin-top: 4px;
+    }
+  }
+  &_cart {
+    width: 55px;
+    height: 30px;
+    display: flex;
+    &_link {
+      width: 100%;
+      height: 100%;
+    }
+    &_icon {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &_img {
+      width: 30px;
+      height: 30px;
+    }
+    &_rund {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #4a4a4a;
+    }
+    &_calk {
+      color: #ffffff;
+    }
+  }
+}
+
+.footer {
+  height: 428px;
+  width: 100%;
+  position: relative;
+  &_cards {
+    height: 345px;
+    width: 100%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: flex;
+    position: absolute;
+    bottom: 83px;
+  }
+  &_card {
+    width: 100%;
+    max-width: 500px;
+    height: 345px;
+    padding: 0 10px;
+    &-title {
+      text-align: center;
+      font-size: 21px;
+      color: rgb(74, 74, 74);
+      margin-top: 50px;
+    }
+    &_list {
+      margin-top: 20px;
+    }
+    &_item {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-link {
+      text-decoration: none;
+      color: rgb(133, 133, 131);
+      font-size: 16px;
+      line-height: 2em;
+    }
+    &_form {
+      width: 244px;
+      height: 193px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px auto;
+      &-button {
+        width: 100%;
+        margin-top: 20px;
+      }
+      &-btn {
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgb(74, 74, 74);
+        background-color: #ffffff;
+        color: rgb(133, 133, 131);
+        font-size: 16px;
+        &:hover {
+          background-color: rgb(74, 74, 74);
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  &_bottom {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    color: rgb(133, 133, 131);
+  }
+}
+
+#footer_form-mail {
+  width: 244px;
+  height: 40px;
+  color: rgb(133, 133, 131);
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(133, 133, 131);
+  padding: 5px;
+  &:hover {
+    border-bottom: 3px solid rgb(133, 133, 131);
+  }
+}
+
+.chat {
+  position: sticky;
+  bottom: 20px;
+  right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  &_btn {
+    border-radius: 50%;
+    background-color: #ffffff;
+    outline: none;
+  }
+  &_img {
+    border-radius: 50%;
+  }
+}
+// sass src/sass:src/css --watch

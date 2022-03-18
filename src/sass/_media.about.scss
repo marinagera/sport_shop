@@ -1,0 +1,41 @@
+@media screen and (max-width: 767px) {
+  .main_wrapper {
+    height: auto;
+  }
+  .section {
+    position: relative;
+    height: auto;
+    &_content {
+      width: 100%;
+      height: auto;
+      margin-top: 175px;
+      margin-right: 0;
+      &-title {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      &-text {
+        width: 100%;
+        max-width: 380px;
+        padding: 0 20px;
+      }
+      &-txt {
+        color: rgb(133, 133, 131);
+
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+    &_image {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 175px;
+    }
+    &_img {
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+    }
+  }
+}

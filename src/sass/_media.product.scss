@@ -1,0 +1,25 @@
+@media screen and (max-width: 767px) {
+  .main_content {
+    width: 100%;
+    padding: 0 35px;
+  }
+  .navigation {
+    &_button {
+      display: none;
+    }
+  }
+  .content {
+    flex-direction: column;
+  }
+  .section {
+    &_photo {
+      margin-bottom: 40px;
+    }
+    &_img {
+      width: 100%;
+    }
+  }
+  .section_discr {
+    margin-left: 0;
+  }
+}

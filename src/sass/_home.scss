@@ -1,0 +1,216 @@
+.main {
+  margin-top: 135px;
+}
+
+.content {
+  display: flex;
+  height: auto;
+  &_intro {
+    width: 35%;
+    height: 610px;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    &-title {
+      max-width: 389px;
+      color: #4a4a4a;
+      font-size: 44px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    &-btn {
+      width: 168px;
+      height: 40px;
+      border: 1px solid #4a4a4a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: rgb(133, 133, 131);
+      margin-top: 50px;
+      &:hover {
+        background-color: #4a4a4a;
+        border: 1px solid #4a4a4a;
+        color: #ffffff;
+        transition: 0.5s;
+      }
+    }
+  }
+  &_movie {
+    height: 610px;
+    width: 65%;
+    overflow: hidden;
+    &_video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.second {
+  &_cards {
+    height: 625px;
+    display: grid;
+    gap: 15px;
+    z-index: -1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 610px;
+    grid-template-areas: "photo1 photo2 photo3";
+    .photo1 {
+      height: 100%;
+      margin: 15px 0;
+      grid-area: photo1;
+      .second_card-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: 50% 0%;
+      }
+    }
+    .photo2 {
+      height: 100%;
+      margin: 15px 0;
+      grid-area: photo2;
+      .second_card-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: 50% 0%;
+      }
+    }
+    .photo3 {
+      height: 100%;
+      margin: 15px 0;
+      grid-area: photo3;
+      .second_card-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: 50% 0%;
+      }
+    }
+  }
+  &_card {
+    position: relative;
+    &-item {
+      text-decoration: none;
+      font-size: 34px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+    }
+    &-link {
+      text-align: center;
+      text-decoration: none;
+      font-size: 34px;
+      color: #ffffff;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  }
+}
+.section_third {
+  height: auto;
+  min-height: 213px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_title {
+    text-align: center;
+    font-size: 44px;
+    color: #4a4a4a;
+  }
+}
+
+.content_fourth {
+  height: auto;
+  width: 100%;
+  &_wrapper {
+    width: 100%;
+  }
+  &_rows {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  &_card {
+    width: calc(100% / 4 + 0px);
+    margin-bottom: 5px;
+    padding: 5px;
+
+    &_link {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+    &_photo {
+      position: relative;
+    }
+    &_img {
+      width: 100%;
+    }
+    &_new {
+      min-width: 20%;
+      max-width: 80%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgb(133, 133, 131);
+      padding: 5px 10px;
+      color: white;
+      text-align: center;
+    }
+    &_button {
+      visibility: hidden;
+    }
+    &_data {
+      padding: 15px 30px 0;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+    &_title {
+      color: #4a4a4a;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    &_line {
+      width: 20px;
+      border-color: #4a4a4a;
+      border-bottom-width: 1px;
+    }
+    &_price {
+      color: #858583;
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+}
+
+.section_sixth {
+  height: auto;
+  min-height: 260px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &_title {
+    text-align: center;
+    font-size: 44px;
+    color: #4a4a4a;
+  }
+}

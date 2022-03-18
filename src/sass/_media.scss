@@ -1,0 +1,139 @@
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  .nav {
+    justify-content: normal;
+    align-items: center;
+    &_toggle {
+      width: 22px;
+      height: 20px;
+      display: inherit;
+      background-color: transparent;
+      border: none;
+      z-index: 2;
+      position: absolute;
+      right: 15px;
+      outline: none;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+        top: 33.3333%;
+        left: 0;
+        background-color: rgb(74, 74, 74);
+        transition: all 0.25s;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+        bottom: 33.3333%;
+        left: 0;
+        background-color: rgb(74, 74, 74);
+        transition: all 0.25s ease-in-out;
+      }
+    }
+    &_list {
+      opacity: none;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      padding-top: 150px;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s, opacity 0.5s, visibility 0.5s;
+    }
+    &_item {
+      width: 40%;
+      padding: 0 25px;
+    }
+    &_link {
+      color: rgb(74, 74, 74);
+      line-height: 60px;
+      font-size: 22px;
+      margin-top: 15px;
+    }
+    &_logIn {
+      opacity: none;
+      visibility: hidden;
+      position: absolute;
+      top: 100px;
+      left: 33%;
+      z-index: 1;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s, opacity 0.5s, visibility 0.5s;
+    }
+    &_button {
+      color: rgb(74, 74, 74);
+      font-size: 20px;
+    }
+    &_cart {
+      margin-left: 70px;
+    }
+  }
+
+  .nav.expand {
+    .nav_list {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+    .nav_logIn {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+    .nav_toggle::after {
+      top: calc(50% - 1px);
+      transform: rotate(-45deg);
+    }
+    .nav_toggle::before {
+      bottom: calc(50% - 1px);
+      transform: rotate(45deg);
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+
+    &_cards {
+      flex-direction: column;
+      border: none;
+    }
+    &_card_form {
+      height: 100px;
+    }
+    &_bottom {
+      width: 100%;
+      position: absolute;
+      bottom: -650px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 30px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid grey;
+    }
+  }
+  .chat {
+  }
+}
